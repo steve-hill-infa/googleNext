@@ -1,5 +1,5 @@
 view: insurance_summary {
-  sql_table_name: [twinPines_Insurance.insurance_summary] ;;
+  sql_table_name: `twinPines_Insurance.insurance_summary` ;;
 
   dimension: claim_amount {
     type: string

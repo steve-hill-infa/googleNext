@@ -1,5 +1,5 @@
 view: insurance_customers {
-  sql_table_name: [twinPines_Insurance.insurance_customers] ;;
+  sql_table_name: `twinPines_Insurance.insurance_customers` ;;
 
   dimension: address1 {
     type: string
