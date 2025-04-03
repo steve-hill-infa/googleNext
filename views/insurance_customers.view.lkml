@@ -27,7 +27,7 @@ view: insurance_customers {
     sql: ${TABLE}.CustomerNum ;;
   }
   dimension: date_of_birth {
-    type: string
+    type: date
     sql: ${TABLE}.DateOfBirth ;;
   }
   dimension: drivers_license {

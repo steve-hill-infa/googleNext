@@ -6,7 +6,7 @@ view: insurance_policies {
     sql: ${TABLE}.CustomerID ;;
   }
   dimension: policy_end_date {
-    type: string
+    type: date
     sql: ${TABLE}.PolicyEndDate ;;
   }
   dimension: policy_id {
@@ -14,7 +14,7 @@ view: insurance_policies {
     sql: ${TABLE}.PolicyID ;;
   }
   dimension: policy_start_date {
-    type: string
+    type: date
     sql: ${TABLE}.PolicyStartDate ;;
   }
   dimension: policy_type {
@@ -23,7 +23,7 @@ view: insurance_policies {
   }
   dimension: premium_amount {
     type: number
-    sql: CAST(${TABLE}.PremiumAmount as INTEGER);;
+    sql: ${TABLE}.PremiumAmount;;
   }
 
   measure: count {

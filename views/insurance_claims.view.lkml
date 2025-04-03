@@ -3,10 +3,10 @@ view: insurance_claims {
 
   dimension: claim_amount {
     type: number
-    sql: CAST(${TABLE}.ClaimAmount as INTEGER);;
+    sql: ${TABLE}.ClaimAmount;;
   }
   dimension: claim_date {
-    type: string
+    type: date
     sql: ${TABLE}.ClaimDate ;;
   }
   dimension: claim_id {
